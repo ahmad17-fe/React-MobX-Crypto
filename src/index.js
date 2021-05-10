@@ -3,10 +3,13 @@ import ReactDOM from "react-dom";
 import "./tailwind.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { MarketProvider } from "./store/CryptoMarketStore";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <MarketProvider>
+      <App />
+    </MarketProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
