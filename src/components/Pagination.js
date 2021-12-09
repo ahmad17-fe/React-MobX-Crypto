@@ -21,15 +21,7 @@ const Pagination = observer(() => {
         </button>
       )}
 
-      <div
-        className={
-          store.isLoading
-            ? "text-gray-100 opacity-0 py-2 px-3"
-            : "text-gray-100 opacity-1 py-2 px-3"
-        }
-      >
-        {store.page}
-      </div>
+      <div className={"text-gray-100 opacity-1 py-2 px-3"}>{store.page}</div>
 
       {store.isLoading ? (
         <button
